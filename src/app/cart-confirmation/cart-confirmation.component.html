@@ -1,0 +1,38 @@
+<!-- Should be a modal but could not get it working.. -->
+<div class="modalcontainer topEase">
+  <div class="message">
+    {{message}}
+  </div>
+
+  <div class="container">
+    <div class="container text-center">
+      <div class="small-gutters row">
+        <div class="col-lg">
+          <button
+            type="button"
+            class="btn btn-primary rounded-0 btn-sm"
+            (click)="dismiss()"
+          >
+            {{continueShopping}}
+          </button>
+        </div>
+
+        <div class="col-lg">
+          <button
+            type="button"
+            class="btn btn-primary rounded-0 btn-sm"
+            (click)="dismiss()"
+          >
+            {{checkoutNow}}
+          </button>
+        </div>
+      </div>
+
+      <div class="developerNote">
+        I believe this is supposed to be a modal and it would automatically graw
+        the backdrop but for the life of me I had issues integrating bootstrap's
+        modal support here :(
+      </div>
+    </div>
+  </div>
+</div>

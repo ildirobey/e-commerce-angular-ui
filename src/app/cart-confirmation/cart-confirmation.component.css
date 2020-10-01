@@ -1,0 +1,21 @@
+.modalcontainer {
+  padding: 5px;
+  background-color: #ddd;
+  width: 300px;
+  min-width: 300px;
+}
+
+.message {
+  margin: 5px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.topEase {
+  margin-top: 30px;
+}
+
+.developerNote {
+  font-size: 0.4em;
+  color: #666;
+}

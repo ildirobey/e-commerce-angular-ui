@@ -1,0 +1,86 @@
+.details {
+  border-left: 0.5px solid #ddd;
+  border-right: 0.5px solid #ddd;
+  border-bottom: 0.5px solid #ddd;
+}
+
+/* Sorry, no fancy shadows */
+.salesign {
+  height: 0px;
+  position: relative;
+  top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: -4px;
+  z-index: 3;
+  font-size: 0.6em;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #333;
+  font-weight: bold;
+  color: #bbb;
+}
+
+/*CSS overlay/hover tricks learnt here: 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade*/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.2s ease;
+  background-color: #444;
+}
+
+.placeholder {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.placeholder:hover .overlay {
+  opacity: 1;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.product {
+  margin-top: 3px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.currentprice {
+  margin-top: 10px;
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+.oldprice {
+  font-size: 0.7em;
+  text-decoration: line-through;
+  color: grey;
+}
+
+.promotion {
+  color: red;
+  font-size: 0.7em;
+}

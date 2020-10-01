@@ -1,0 +1,22 @@
+<div class="outercontainer">
+  <!-- Note: used bootstrap for layout, dependency in package.json-->
+  <div class="container">
+    <div class="small-gutters row">
+      <div class="col-lg" *ngFor="let product of productList">
+        <product
+          [product]="product"
+          (itemAddedToCartEvent)="addToCart($event)"
+        ></product>
+      </div>
+    </div>
+  </div>
+
+  <!-- Idea is to trigger a modal when an item is added to cart -->
+  <div class="row justify-content-md-center">
+    <div *ngIf="showCartConfirmation">
+      <cart-confirmation
+        (dismissConfirmationEvent)="dismissConfirmation($event)"
+      ></cart-confirmation>
+    </div>
+  </div>
+</div>

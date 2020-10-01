@@ -1,0 +1,30 @@
+<div>
+  <span class="salesign">
+    SALE
+  </span>
+  <div class="placeholder">
+    <img
+      class="image"
+      alt="{{product.imageAltText}}"
+      src="{{product.imageSrc}}"
+    />
+    <div class="overlay">
+      <div class="col text-center vertical-center">
+        <button
+          type="button"
+          class="btn btn-primary rounded-0"
+          (click)="addToCart()"
+        >
+          {{addToCartText}}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="details">
+    <div class="product">{{product.name}}</div>
+    <div class="currentprice">${{product.currentPrice}}</div>
+    <div class="oldprice">${{product.oldPrice}}</div>
+    <div class="promotion">{{product.promotionalMessage}}</div>
+  </div>
+</div>
